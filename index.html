@@ -1,105 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Portfolio | Minal Shinde</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Minal Shinde</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-------------- Header Section ------------------->
-    <div id="header">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-content">
-                <div class="header-text">
-                    <h1>Hi, I'm Minal Shinde</h1>
-                    <p>Electronics and Communication Engineer</p>
-                </div>
-            </div>
-        </div>
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Minal Shinde</span></h1>
+        <p>Electronics and Communication Engineering Student</p>
+      </div>
     </div>
+  </header>
 
-    <!-------------- About Section --------------->
-    <div id="about">
-        <div class="container row">
-            <div class="about-col-1">
-                <img src="Images/Picture.jpg" alt="Minal Shinde" class="about-img">
-            </div>
-            <div class="about-col-2">
-                <h1 class="subtitle">About Me</h1>
-                <p>I am an Electronics and Communication Engineer passionate about technology and innovation...</p>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="Images/Picture.jpg" alt="Minal Shinde">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>I’m an Electronics and Communication Engineering student passionate about IoT, communication systems, and smart tech. I enjoy tackling real-world challenges using electronics and continuously seek new ways to innovate and grow in this evolving field.</p>
+        <p>Currently exploring collaboration opportunities to build impactful projects and shape a smarter future.</p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Projects</p>
-                    <p class="tab-links">Experiences</p>
-                    <p class="tab-links">Languages</p>
-                </div>
-
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li>MATLAB</li>
-                        <li>Simulink</li>
-                        <li>Multisim</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="projects">
-                    <ul>
-                        <li><strong>Smart Weather Monitoring System Using NodeMCU</strong><br>...</li>
-                        <li><strong>Smart Parking Assistant Using Arduino</strong><br>...</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="experiences">
-                    <ul>
-                        <li><strong>Powertrain Design – TEAM BOLT (EV Two-Wheelers)</strong><br>...</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="languages">
-                    <ul>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="tabs">
+          <button class="tab-button active">Skills</button>
+          <button class="tab-button">Projects</button>
+          <button class="tab-button">Experience</button>
+          <button class="tab-button">Languages</button>
         </div>
-    </div>
 
-    <!-- Contact Section -->
-    <div id="contact">
-        <div class="container">
-            <h1 class="subtitle">Contact</h1>
-            <p>Email: <a href="mailto:minal.shinde@mitwpu.edu.in">minal.shinde@mitwpu.edu.in</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/minal-shinde-912a11305/" target="_blank">Minal Shinde</a></p>
+        <div class="tab-content active">
+          <ul>
+            <li>Machine Learning Implementation</li>
+            <li>Data Visualization Tools</li>
+            <li>MATLAB, Simulink</li>
+            <li>Multisim, Arduino IDE</li>
+            <li>Canva, Figma</li>
+          </ul>
         </div>
+
+        <div class="tab-content">
+          <ul>
+            <li><strong>Smart Weather Monitoring:</strong> NodeMCU + sensors with Blynk integration for smart farming.</li>
+            <li><strong>Loan Detection System:</strong> ML-based prediction with EDA & model evaluation.</li>
+            <li><strong>Smart Parking Assistant:</strong> Arduino + IR sensor + servo motor for barrier automation.</li>
+            <li><strong>Earthquake Detector:</strong> Accelerometer with buzzer + LCD alert system.</li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+          <ul>
+            <li><strong>Design Coordinator - CoDeC:</strong> Visual design & content for events and branding.</li>
+            <li><strong>Powertrain Design – TEAM BOLT:</strong> Working on electric 2-wheeler drivetrain systems.</li>
+            <li><strong>SIH-24:</strong> IoT & AI-based traffic signal optimization system.</li>
+            <li><strong>HackMIT 2025:</strong> Non-invasive brain blood clot detector using NIRS & MATLAB.</li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Embedded C</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <script>
-        const tabLinks = document.querySelectorAll(".tab-links");
-        const tabContents = document.querySelectorAll(".tab-contents");
+  <!-- Contact Section -->
+  <footer id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:minal.shinde@mitwpu.edu.in">minal.shinde@mitwpu.edu.in</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/minal-shinde-912a11305/" target="_blank">Minal Shinde</a></p>
+    </div>
+  </footer>
 
-        tabLinks.forEach((tab, index) => {
-            tab.addEventListener("click", () => {
-                tabLinks.forEach(t => t.classList.remove("active-link"));
-                tabContents.forEach(c => c.classList.remove("active-tab"));
-                tab.classList.add("active-link");
-                tabContents[index].classList.add("active-tab");
-            });
-        });
-    </script>
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+        tabContents.forEach(content => content.classList.remove("active"));
+        button.classList.add("active");
+        tabContents[index].classList.add("active");
+      });
+    });
+  </script>
 
 </body>
 </html>
